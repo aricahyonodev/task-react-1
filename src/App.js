@@ -10,12 +10,11 @@ function App() {
       <nav>
         <Link to="/">Home</Link> | 
         <Link to="product-list">Product List</Link> |
-        <Link to="product-detail">Product Detail</Link> 
       </nav>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/product-list" element={<ProductList />} />
-        <Route path="/product-detail" element={<ProducDetail />} />
+        <Route path="/product-detail/:id" element={<ProducDetail />} />
       </Routes>
     </BrowserRouter>
   );
